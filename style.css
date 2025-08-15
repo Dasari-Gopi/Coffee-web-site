@@ -28,7 +28,7 @@ body {
 /* Navigation Links */
 .nav-links {
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 .nav-links li {
@@ -47,4 +47,49 @@ body {
 .nav-links a:hover {
     background-color: #010e23ef;
     color: #ffdd99;
+}
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3e0d2;
+    padding: 50px 10%;
+}
+
+.home-content {
+    max-width: 50%;
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    color: #5a2d0c;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.1rem;
+    color: #3d2b1f;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.home-content button {
+    background-color: #802506;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.home-content button:hover {
+    background-color: #5a1b04;
+}
+
+.home-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
