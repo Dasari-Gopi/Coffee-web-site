@@ -12,7 +12,7 @@ body {
 
 /* Navbar Styles */
 .nav-bar {
-    background-color: #802506;
+    background-color:#5a1b04;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,7 @@ body {
 /* Navigation Links */
 .nav-links {
     display: flex;
-    /* gap: 20px; */
+    gap: 20px;
 }
 
 .nav-links li {
@@ -45,7 +45,7 @@ body {
 }
 
 .nav-links a:hover {
-    background-color: #010e23ef;
+    background-color: #802506;
     color: #ffdd99;
 }
 .home {
@@ -92,4 +92,82 @@ body {
     max-width: 400px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Menu Section Styles       */
+.menu {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: #fff7f2;
+}
+
+.menu h2 {
+    font-size: 2.2rem;
+    color: #5a2d0c;
+    margin-bottom: 40px;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Decorative underline under heading */
+.menu h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #802506;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+/* Card Design */
+.menu-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-card h3 {
+    font-size: 1.3rem;
+    color: #4e342e;
+    margin-bottom: 8px;
+}
+
+.menu-card p {
+    font-size: 0.95rem;
+    color: #5d4037;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.menu-card span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #802506;
+    margin-top: 5px;
+}
+
+/* Hover Effect */
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
